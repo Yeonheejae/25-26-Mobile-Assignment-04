@@ -23,9 +23,11 @@ const SignInScreen = ({navigation}) => {
             />
             <Button
                 title = {"로그인"}
+                marginTop={40}
             />
             <Button onPress={() => navigation.navigate("SignUp")}
                 title = {"회원가입"}
+                marginTop={10}
             />
         </View>
     )

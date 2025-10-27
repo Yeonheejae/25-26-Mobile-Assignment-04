@@ -7,7 +7,7 @@ export const KeyboardTypes = {
 
 function CustomInput({title, placeholder, keyboardType}) {
     return(
-        <View>
+        <View style={styles.container}>
             <Text style={styles.label}>{title}</Text>
             <TextInput style={styles.input}
             placeholder = {placeholder ?? title}
@@ -22,10 +22,8 @@ function CustomInput({title, placeholder, keyboardType}) {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
+        width: '80%'
     },
 
     input: {
@@ -33,7 +31,6 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         paddingHorizontal: 10,
         height: 42,
-        width: 329,
         marginBottom: 10,
     },
     label: {

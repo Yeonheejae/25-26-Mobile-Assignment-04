@@ -2,7 +2,7 @@ import { Image, View, StyleSheet} from 'react-native';
 
 function LogoImage(){
     return(
-        <View>
+        <View style={styles.container}>
             <Image
             source={require('../../assets/hjcompany.png')}
             resizeMode="cover"
@@ -14,10 +14,7 @@ function LogoImage(){
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
     },
 
     image: {
